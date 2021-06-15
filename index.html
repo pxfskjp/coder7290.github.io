@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <title>Dashboard - Target Admin</title>
+
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,300,700">
+    <link rel="stylesheet" href="js/libs/css/ui-lightness/jquery-ui-1.9.2.custom.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="js/plugins/morris/morris.css">
+    <link rel="stylesheet" href="js/plugins/icheck/skins/minimal/blue.css">
+    <link rel="stylesheet" href="js/plugins/select2/select2.css">
+    <link rel="stylesheet" href="js/plugins/fullcalendar/fullcalendar.css">
+
+    <!-- App CSS -->
+    <link rel="stylesheet" href="css/target-admin.css">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/swiper.bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="navbar-header">
+            <a href="#" class="sign-out-link">
+                <i class="fa fa-sign-out"> Sair </i>
+            </a>
+        </div>
+        <!-- /.navbar-header -->
+
+    </div>
+    <!-- /.container -->
+    <!-- /.navbar -->
+
+    <header>
+        <div class="container">
+
+            <!-- ---------------------------Menu Start------------------- -->
+            <nav class="header_menu">
+                <div class="logo"></div>
+                <ul>
+                    <li><button><i class="fas fa-arrow-left"></i><span>Sala Virtual</span></button></li>
+                    <li><button><i class="fas fa-flag"></i><span>Inicio / Disciplinas</span></button> </li>
+                    <li><button><i class="fas fa-flag-checkered"></i><span>Ativ Complementares</span></button> </li>
+                    <li><button><i class="fas fa-play-circle"></i><span>Aulas Ao Vivo</span></button> </li>
+                    <li><button><i class="fas fa-graduation-cap"></i><span>Professores</span></button> </li>
+                    <li><button><i class="far fa-university"></i><span>Alunos</span></button> </li>
+                    <li><button><i class="far fa-comment-dots"></i><span>Mensagens</span></button> </li>
+                    <li><button><i class="fas fa-check-circle"></i><span>Avaliacoes</span></button> </li>
+                    <li><button><i class="fas fa-coffee"></i><span>Tutorials</span></button> </li>
+                </ul>
+                <div class="button">
+                    <i class="fas fa-bars btn"></i>
+                </div>
+
+            </nav>
+            <!-- ---------------------------Menu End------------------- -->
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section>
+                <div class="container p-0">
+                    <div class="main">
+                        <div class="main_text">
+                            <h1>Disciplinas</h1>
+                            <p>4 &#176; Ano</p>
+                            <a href="#">Inicio</a>
+                        </div>
+                        <!-- ---------------------------Slider Start------------------- -->
+                        <div class="slider-panel">
+                            <div class="swiper-container review_slider">
+                                <div id="week_slider" class="swiper-wrapper"></div>
+                            </div>
+                            <button class="review_slider-button review_slider-next"><i class="fas fa-arrow-right"></i></button>
+                            <button class="review_slider-button review_slider-prev"><i class="fas fa-arrow-left"></i></button>
+                        </div>
+                        <!-- ---------------------------Slider End------------------- -->
+
+                        <!-- ---------------------------Art Section Start------------------- -->
+                        <div id="lessons"></div>
+                        <!-- ---------------------------Art Section End------------------- -->
+                        <hr class="art_box_line">
+                        <div class="main_last">
+                            <p>ver por componente curricular</p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+    <script src="js/swiper-bundle.min.js "></script>
+    <script type="text/javascript" src="js/data.json"></script>
+
+    <script src="js/libs/jquery-1.10.1.min.js"></script>
+    <script src="js/libs/jquery-ui-1.9.2.custom.min.js"></script>
+    <script src="js/libs/bootstrap.min.js"></script>
+    <script src="js/plugins/icheck/jquery.icheck.js"></script>
+    <script src="js/plugins/select2/select2.js"></script>
+    <script src="js/libs/raphael-2.1.2.min.js"></script>
+    <script src="js/plugins/morris/morris.min.js"></script>
+    <script src="js/plugins/sparkline/jquery.sparkline.min.js"></script>
+    <script src="js/plugins/nicescroll/jquery.nicescroll.min.js"></script>
+    <script src="js/plugins/fullcalendar/fullcalendar.min.js"></script>
+
+    <!-- App JS -->
+    <script src="js/target-admin.js"></script>
+
+    <!-- Plugin JS -->
+    <script src="js/demos/dashboard.js"></script>
+    <script src="js/demos/calendar.js"></script>
+    <script src="js/demos/charts/morris/area.js"></script>
+    <script src="js/demos/charts/morris/donut.js"></script>
+    <script type="text/javascript">
+        var sliderInnerHTML = '';
+        courses.map((data) => {
+            sliderInnerHTML += `<div class="swiper-slide"> \
+                            <div class="slider_content "> \
+                                <div class="slider_content-box"> \
+                                    <div class="slider_content-date"> \
+                                        <h3> ${data.day} </h3> \
+                                        <p> ${data.month} </p> \
+                                    </div> \
+                                    <hr class="slider_content-box_hr"> \
+                                    <div class="pricing_cart_text"> \
+                                        <h3> ${data.day_of_the_week} </h3> \
+                                        <ul> \
+                                            <li> \
+                                                <p> ${data.schedule_live_class} aula(s) ao vivo agendada(s)</p> \
+                                            </li> \
+                                            <li> \
+                                                <p>${data.new_class} nova(s) aula(s)</p> \
+                                            </li> \
+                                            <li> \
+                                                <p>${data.reviews} avaliações (ão)</p> \
+                                            </li> \
+                                            <li> \
+                                                <p>${data.activity} atividade(s)</p> \
+                                            </li> \
+                                        </ul> \
+                                    </div> \
+                                </div> \
+                                <button class="slider_content_ex" onclick="viewClass(${data.id})"><span>Ver Planejamento</span></button> \
+                            </div> \
+                        </div>`;
+        });
+        $("#week_slider").html(sliderInnerHTML);
+
+        function viewClass(id) {
+            var departmentHTML = '';
+            var selectedCourse = '';
+            courses.map((course) => {
+                if (course.id === id.toString()) selectedCourse = course;
+            })
+
+            selectedCourse.department.map((lesson) => {
+                departmentHTML += `<hr class="art_box_line"> \
+                                    <div class="art_box art_box_green-line"> \
+                                        <div class="art_box_artes art_box_artes_blue "> \
+                                            <div class="art_logo red_book"> \
+                                                <img class="blue_bottle" src="${lesson.logo}" alt=""> \
+                                            </div> \
+                                            <div class="art_text"> \
+                                                <h4>${lesson.subject}</h4> \
+                                                <p>Professor: <span>${lesson.teacher}</span> </p> \
+                                                <i class="far fa-calendar-alt"> Carga Horaria: ${lesson.teacher}<</i> \
+                                            </div> \
+                                        </div>\
+                                        <div class="art_box_main"> \
+                                            <div class="art_box_main_logo"> \
+                                                <i class="fas fa-play-circle"></i> \
+                                            </div>`;
+
+                if (lesson.class_state === 'completed') {
+                    departmentHTML += `
+                                    <div class="art_box_main_text"> \
+                                        <p>07ª SEMANA - AULA 07- ATUALIZAÇÃO DAS ATIVIDADES. ( QUARTA - FEIRA)</p> \
+                                        <button class="blue_button"><span>CONCLUIR</span>AULA</button> \
+                                    </div>\
+                                </div>`;
+                } else {
+                    if (lesson.class_type != '') {
+                        departmentHTML += `
+                                <div class="art_box_main_text">
+                                    <p>07ª SEMANA - AULA 07- ATUALIZAÇÃO DAS ATIVIDADES. ( QUARTA - FEIRA)</p>
+                                    <button><span>AULA</span>CONCLUÍDA</button>
+                                </div>
+                                </div>
+                                <div class="art_box_main">
+                                    <div class="art_box_main_logo">
+                                        <i class="fas fa-play-circle "></i>
+                                    </div>
+                                    <div class="art_box_main_text">
+                                        <p>${lesson.class_type}</p>`
+                        if (lesson.class_type != '') {
+                            departmentHTML += `
+                                                <button class="icon_red_btn">COMEÇAS AS ${lesson.start_time}</button>
+                                            </div>
+                                        </div></div>`;
+                        } else {
+                            departmentHTML += `<button class="icon_red_btn">COMEÇAS</button>
+                                            </div>
+                                        </div></div>`;
+                        }
+                    } else {
+                        departmentHTML += `
+                                <div class="art_box_main_text">
+                                    <p>07ª SEMANA - AULA 07- ATUALIZAÇÃO DAS ATIVIDADES. ( QUARTA - FEIRA)</p>
+                                    <button><span>AULA</span>CONCLUÍDA</button>
+                                </div></div>`;
+                    }
+                }
+                departmentHTML += `</div>`;
+            });
+            $('#lessons').html(departmentHTML);
+        }
+    </script>
+    <script src="js/script.js "></script>
+</body>
+
+</html>

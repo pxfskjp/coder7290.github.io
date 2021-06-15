@@ -1,0 +1,221 @@
+courses = [{
+    "id": "1",
+    "month": "May",
+    "day": "27",
+    "day_of_the_week": "Thursday",
+    "schedule_live_class": "02",
+    "new_class": "05",
+    "reviews": "02",
+    "activity": "00",
+    "department": [{
+        "logo": "img/department/math.png",
+        "subject": "ARTES",
+        "teacher": "JOELMA LIMA DA SILVA",
+        "course_load": "40",
+        "class_state": "uncompleted",
+        "class_type": "AULA AO VIVO",
+        "start_time": "8 A.M."
+    }, {
+        "logo": "img/department/chemistry.png",
+        "subject": "CINECIAS",
+        "teacher": "JOELMA LIMA DA SILVA",
+        "course_load": "80",
+        "class_state": "completed",
+        "class_type": "",
+        "start_time": ""
+    }, {
+        "logo": "img/department/language.png",
+        "subject": "LINGUA PORTUGUESA",
+        "teacher": "JOELMA LIMA DA SILVA",
+        "course_load": "280",
+        "class_state": "completed",
+        "class_type": "",
+        "start_time": ""
+    }]
+}, {
+    "id": "2",
+    "month": "May",
+    "day": "28",
+    "day_of_the_week": "Friday",
+    "schedule_live_class": "02",
+    "new_class": "05",
+    "reviews": "02",
+    "activity": "00",
+    "department": [{
+        "logo": "img/department/math.png",
+        "subject": "Physics",
+        "teacher": "JOELMA LIMA DA SILVA",
+        "course_load": "40",
+        "class_state": "completed",
+        "class_type": "AULA AO VIVO",
+        "start_time": "8 A.M."
+    }, {
+        "logo": "img/department/chemistry.png",
+        "subject": "Chemistry",
+        "teacher": "JOELMA LIMA DA SILVA",
+        "course_load": "80",
+        "class_state": "completed",
+        "class_type": "",
+        "start_time": ""
+    }, {
+        "logo": "img/department/language.png",
+        "subject": "Mother Tongue",
+        "teacher": "JOELMA LIMA DA SILVA",
+        "course_load": "280",
+        "class_state": "uncompleted",
+        "class_type": "",
+        "start_time": ""
+    }]
+}, {
+    "id": "3",
+    "month": "May",
+    "day": "31",
+    "day_of_the_week": "Monday",
+    "schedule_live_class": "04",
+    "new_class": "09",
+    "reviews": "300",
+    "activity": "00",
+    "department": [{
+        "logo": "img/department/math.png",
+        "subject": "Math",
+        "teacher": "JOELMA LIMA DA SILVA",
+        "course_load": "40",
+        "class_state": "completed",
+        "class_type": "AULA AO VIVO",
+        "start_time": "8 A.M."
+    }, {
+        "logo": "img/department/language.png",
+        "subject": "Russian",
+        "teacher": "JOELMA LIMA DA SILVA",
+        "course_load": "80",
+        "class_state": "completed",
+        "class_type": "",
+        "start_time": ""
+    }, {
+        "logo": "img/department/language.png",
+        "subject": "English",
+        "teacher": "JOELMA LIMA DA SILVA",
+        "course_load": "780",
+        "class_state": "uncompleted",
+        "class_type": "",
+        "start_time": ""
+    }, {
+        "logo": "img/department/language.png",
+        "subject": "Spanish",
+        "teacher": "JOELMA LIMA DA SILVA",
+        "course_load": "1280",
+        "class_state": "uncompleted",
+        "class_type": "AULA AO VIVO",
+        "start_time": "11 A.M."
+    }]
+}, {
+    "id": "4",
+    "month": "June",
+    "day": "01",
+    "day_of_the_week": "Tuesday",
+    "schedule_live_class": "06",
+    "new_class": "123",
+    "reviews": "234",
+    "activity": "00",
+    "department": [{
+        "logo": "img/department/chemistry.png",
+        "subject": "History",
+        "teacher": "JOELMA LIMA DA SILVA",
+        "course_load": "40",
+        "class_state": "completed",
+        "class_type": "AULA AO VIVO",
+        "start_time": "8 A.M."
+    }, {
+        "logo": "img/department/language.png",
+        "subject": "English",
+        "teacher": "JOELMA LIMA DA SILVA",
+        "course_load": "80",
+        "class_state": "completed",
+        "class_type": "Online Class",
+        "start_time": "6 A.M."
+    }]
+}, {
+    "id": "5",
+    "month": "June",
+    "day": "02",
+    "day_of_the_week": "Thursday",
+    "schedule_live_class": "02",
+    "new_class": "05",
+    "reviews": "02",
+    "activity": "00",
+    "department": [{
+        "logo": "img/department/math.png",
+        "subject": "ARTES",
+        "teacher": "JOELMA LIMA DA SILVA",
+        "course_load": "40",
+        "class_state": "uncompleted",
+        "class_type": "",
+        "start_time": ""
+    }, {
+        "logo": "img/department/chemistry.png",
+        "subject": "CINECIAS",
+        "teacher": "JOELMA LIMA DA SILVA",
+        "course_load": "80",
+        "class_state": "completed",
+        "class_type": "",
+        "start_time": ""
+    }, {
+        "logo": "img/department/math.png",
+        "subject": "LINGUA PORTUGUESA",
+        "teacher": "JOELMA LIMA DA SILVA",
+        "course_load": "280",
+        "class_state": "uncompleted",
+        "class_type": "",
+        "start_time": ""
+    }, {
+        "logo": "img/department/chemistry.png",
+        "subject": "LINGUA PORTUGUESA",
+        "teacher": "JOELMA LIMA DA SILVA",
+        "course_load": "280",
+        "class_state": "uncompleted",
+        "class_type": "Online Class",
+        "start_time": "14:00 P.M."
+    }, {
+        "logo": "img/department/math.png",
+        "subject": "LINGUA PORTUGUESA",
+        "teacher": "JOELMA LIMA DA SILVA",
+        "course_load": "280",
+        "class_state": "uncompleted",
+        "class_type": "",
+        "start_time": ""
+    }]
+}, {
+    "id": "6",
+    "month": "June",
+    "day": "03",
+    "day_of_the_week": "Wednesday",
+    "schedule_live_class": "03",
+    "new_class": "07",
+    "reviews": "120",
+    "activity": "03",
+    "department": [{
+        "logo": "img/department/math.png",
+        "subject": "ARTES",
+        "teacher": "JOELMA LIMA DA SILVA",
+        "course_load": "40",
+        "class_state": "completed",
+        "class_type": "AULA AO VIVO",
+        "start_time": "8 A.M."
+    }, {
+        "logo": "img/department/chemistry.png",
+        "subject": "CINECIAS",
+        "teacher": "JOELMA LIMA DA SILVA",
+        "course_load": "120",
+        "class_state": "completed",
+        "class_type": "AULA AO VIVO",
+        "start_time": "10 A.M."
+    }, {
+        "logo": "img/department/language.png",
+        "subject": "LINGUA PORTUGUESA",
+        "teacher": "JOELMA LIMA DA SILVA",
+        "course_load": "280",
+        "class_state": "completed",
+        "class_type": "Online Class",
+        "start_time": "03 P.M."
+    }]
+}]
